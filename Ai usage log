@@ -1,0 +1,19 @@
+
+Nama Project: KursusKu
+
+Penggunaan AI pada Bagian CSS
+
+ChatGPT digunakan sebagai alat bantu dalam pengembangan CSS untuk website KursusKu. Bantuan yang diberikan meliputi:
+
+1. Memberikan saran pemilihan warna agar tampilan website terlihat menarik dan nyaman dilihat.
+2. Membantu mengatur tata letak elemen halaman agar lebih rapi.
+3. Membantu menyesuaikan tampilan kartu program belajar.
+4. Membantu mengatur tampilan website agar responsif pada perangkat desktop dan mobile.
+
+Verifikasi
+
+CSS yang digunakan diperiksa dan diuji secara langsung melalui browser untuk memastikan kesesuaian tampilan website. Penyesuaian dilakukan agar halaman KursusKu terlihat rapi, konsisten, dan mudah digunakan.
+
+Kesimpulan
+
+Penggunaan AI terbatas pada bantuan desain dan penyesuaian CSS. Struktur program Laravel, route, controller, dan Blade tidak termasuk bagian yang dibantu oleh AI dalam catatan penggunaan ini.
