@@ -1,0 +1,58 @@
+@extends('layouts.app')
+
+@section('title', 'Beranda - KursusKu')
+
+@section('content')
+<section class="py-5">
+    <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+            <span class="badge text-bg-success mb-3">
+                Kursus teknologi untuk mahasiswa
+            </span>
+
+            <h1 class="display-5 fw-bold">
+                Belajar lebih terarah bersama KursusKu
+            </h1>
+
+            <p class="lead text-secondary">
+                Pilih kursus, cek ketersediaan kursi, lalu isi formulir pendaftaran.
+            </p>
+
+           <a href="{{ route('enrollments.create') }}"
+               class="btn btn-success">
+                Daftar Kursus
+            </a>
+        </div>
+
+        {{-- Tambahan dari Pertemuan 7: gambar hero --}}
+        <div class="col-lg-5">
+            <img src="{{ asset('images/hero-kursus.jpg') }}"
+                 alt="Ilustrasi kelas KursusKu"
+                 class="img-fluid rounded-4 shadow-sm">
+        </div>
+    </div>
+</section>
+
+{{-- Tambahan dari Pertemuan 7 --}}
+<section class="py-4">
+    <h2 class="h4 fw-bold mb-3">Kursus Pilihan</h2>
+
+    <div class="row g-3">
+        @foreach ($featured as $course)
+            <div class="col-md-6 col-lg-3">
+                <article class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <small class="text-success fw-semibold">
+                            {{ $course['code'] }}
+                        </small>
+                        <h3 class="h5 mt-1">{{ $course['name'] }}</h3>
+                        <p class="text-secondary mb-0">
+                            {{ $course['description'] }}
+                        </p>
+                    </div>
+                </article>
+            </div>
+        @endforeach
+    </div>
+</section>
+@endsection
