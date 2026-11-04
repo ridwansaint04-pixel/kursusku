@@ -18,10 +18,9 @@
                 Pilih kursus, cek ketersediaan kursi, lalu isi formulir pendaftaran.
             </p>
 
-           <a href="{{ route('enrollments.create') }}"
-               class="btn btn-success">
-                Daftar Kursus
-            </a>
+           <a href="{{ route('courses.index') }}" class="btn btn-success">
+    Daftar Kursus
+</a>
         </div>
 
         {{-- Tambahan dari Pertemuan 7: gambar hero --}}

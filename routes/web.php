@@ -3,10 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CourseController;
 
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
-
+Route::resource('courses', CourseController::class);
 Route::get('/pendaftaran', function () {
     $courses = [
         1 => ['name' => 'Web Dasar'],
