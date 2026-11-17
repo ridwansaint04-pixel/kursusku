@@ -189,7 +189,8 @@
             </div>
         @endif
 
-        <form action="{{ route('courses.store') }}" method="POST">
+        <form action="{{ route('courses.store') }}"
+        method="POST">
             @csrf
 
             <div class="row g-3">

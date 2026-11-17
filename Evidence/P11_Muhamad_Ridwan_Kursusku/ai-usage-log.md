@@ -1,0 +1,5 @@
+AI Usage Log – Proyek KursusKu (Pertemuan 11)
+Dalam pengerjaan proyek aplikasi KursusKu, saya menggunakan AI sebagai alat bantu secara terbatas, bukan sebagai pengganti proses pengerjaan maupun pembelajaran.
+ Membantu mengatasi error: AI digunakan untuk membantu mengidentifikasi penyebab kesalahan (error) pada kode program, menjelaskan pesan error, serta memberikan saran perbaikan ketika aplikasi mengalami kendala.
+ Membantu desain tampilan: AI digunakan untuk memberikan masukan mengenai pemilihan warna, tata letak halaman, desain navbar, tombol, dan elemen antarmuka agar aplikasi KursusKu terlihat lebih modern, menarik, dan mudah digunakan.
+ Pengerjaan berdasarkan modul: Seluruh proses pengerjaan fitur, struktur program, dan tahapan praktikum tetap mengacu pada modul Pertemuan 11 serta instruksi dan arahan dosen.
