@@ -1,0 +1,3 @@
+ Praktikum Laravel Pertemuan 12
+
+Dalam pengerjaan praktikum Laravel Pertemuan 12, AI (ChatGPT) digunakan hanya sebagai alat bantu untuk mengatasi error yang terjadi selama proses pengerjaan serta memberikan saran dan ide desain tampilan aplikasi agar lebih rapi dan menarik. Adapun proses pengerjaan, implementasi fitur, struktur kode, tahapan praktikum, serta materi yang diterapkan tetap mengikuti panduan modul praktikum yang telah diberikan.

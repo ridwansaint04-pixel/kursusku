@@ -4,10 +4,13 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\EnrollmentController;
 
 Route::get('/', [HomeController::class, 'index'])
     ->name('home');
+
 Route::resource('courses', CourseController::class);
+
 Route::get('/pendaftaran', function () {
     $courses = [
         1 => ['name' => 'Web Dasar'],
@@ -16,7 +19,7 @@ Route::get('/pendaftaran', function () {
     ];
 
     return view('enrollments.create', compact('courses'));
-})->name('enrollments.create');
+})->name('pendaftaran.create');
 
 Route::post('/pendaftaran/preview', function (Request $request) {
     $data = $request->validate([
@@ -29,6 +32,7 @@ Route::post('/pendaftaran/preview', function (Request $request) {
         ->with('success', 'Form lolos validasi. Database akan ditambahkan pada pertemuan berikutnya.')
         ->withInput();
 })->name('enrollments.preview');
+
 Route::get('/courses/{course}/availability', function (int $course) {
     $availability = [
         1 => [
@@ -49,3 +53,6 @@ Route::get('/courses/{course}/availability', function (int $course) {
 
     return response()->json($availability[$course]);
 })->name('courses.availability');
+
+Route::resource('enrollments', EnrollmentController::class)
+    ->only(['index', 'create', 'store']);
